@@ -6,6 +6,7 @@ from view.screen import (
 )
 from view.components import Button
 from model.hmm import STATE_NAMES, STATE_EMOJIS, STATE_COLORS
+from words import POSITIVE_WORDS, NEUTRAL_WORDS, NEGATIVE_WORDS
 
 POS_X, NEU_X, NEG_X = 250, 640, 1030
 CIRCLES_Y = 250
@@ -15,17 +16,18 @@ CIRCLE_R = 70
 ARROW_Y_ABOVE = 218
 ARROW_Y_BELOW = 282
 
-TRANS_PROBS = {
-    (0, 0): 0.6, (0, 1): 0.3, (0, 2): 0.1,
-    (1, 0): 0.2, (1, 1): 0.6, (1, 2): 0.2,
-    (2, 0): 0.1, (2, 1): 0.3, (2, 2): 0.6,
-}
+SPEED_OPTIONS = [
+    ("Rápido", 5),
+    ("Normal", 300),
+    ("Lento", 2000),
+]
+WORD_LISTS = [POSITIVE_WORDS, NEUTRAL_WORDS, NEGATIVE_WORDS]
 
 ITEM_H = 26
 LIST_X = 40
 LIST_W = 1200
-LIST_Y = 490
-LIST_H = 130
+LIST_Y = 520
+LIST_H = 110
 VISIBLE_ITEMS = LIST_H // ITEM_H
 
 
@@ -36,13 +38,22 @@ class SimulationScreen(Screen):
         self.font_tweet_small = pygame.font.Font(None, 20)
         self.font_btn = pygame.font.Font(None, 26)
         self.font_emoji = pygame.font.Font(None, 72)
-        self.font_word = pygame.font.Font(None, 40)
+        self.font_word = pygame.font.Font(None, 36)
         self.font_tweet_text = pygame.font.Font(None, 26)
         self.font_arrow = pygame.font.Font(None, 22)
         self.font_state_label = pygame.font.Font(None, 16)
 
+        self.speed_btns = []
+        for i, (label, _) in enumerate(SPEED_OPTIONS):
+            btn = Button(
+                (20 + i * 85, 30, 80, 28), label, self.font_btn,
+                (60, 60, 80), (80, 80, 110),
+                callback=lambda i=i: self._set_speed(i)
+            )
+            self.speed_btns.append(btn)
+
         self.btn_results = Button(
-            (540, 640, 200, 50),
+            (540, 650, 200, 50),
             "Ver Resultados", self.font_btn,
             (0, 150, 80), (0, 190, 100),
             callback=self.go_summary
@@ -53,11 +64,16 @@ class SimulationScreen(Screen):
     def reset(self):
         self.current_index = -1
         self.total = 0
-        self.delay = 200
+        self.speed_index = 1
+        self.delay = SPEED_OPTIONS[self.speed_index][1]
         self.last_time = 0
         self.running = False
         self.done = False
         self.scroll = 0
+
+    def _set_speed(self, idx):
+        self.speed_index = idx
+        self.delay = SPEED_OPTIONS[idx][1]
 
     def go_summary(self):
         self.controller.switch_to(3)
@@ -71,12 +87,8 @@ class SimulationScreen(Screen):
             self.done = False
             self.scroll = 0
 
-            if self.total <= 10:
-                self.delay = 300
-            elif self.total <= 100:
-                self.delay = 40
-            else:
-                self.delay = 5
+            self.speed_index = 1
+            self.delay = SPEED_OPTIONS[1][1]
 
             self.last_time = pygame.time.get_ticks()
 
@@ -86,9 +98,16 @@ class SimulationScreen(Screen):
             if now - self.last_time >= self.delay:
                 self.current_index += 1
                 self.last_time = now
+                self.scroll = max(0, self.current_index + 1 - VISIBLE_ITEMS)
                 if self.current_index >= self.total - 1:
                     self.done = True
                     self.running = False
+
+    def _extract_word(self, tweet, obs_idx):
+        for word in WORD_LISTS[obs_idx]:
+            if word in tweet.lower():
+                return word
+        return ""
 
     def _circle_edge(self, cx, cy, angle_deg):
         a = math.radians(angle_deg)
@@ -186,12 +205,20 @@ class SimulationScreen(Screen):
 
         progress = (self.current_index + 1) / self.total if self.current_index >= 0 else 0
 
-        pygame.draw.rect(screen, (40, 44, 64), (140, 30, 1000, 28), border_radius=5)
-        fill_w = int(1000 * progress)
+        for i, btn in enumerate(self.speed_btns):
+            active = i == self.speed_index
+            btn.color = ACCENT_COLOR if active else (60, 60, 80)
+            btn.hover_color = ACCENT_HOVER if active else (80, 80, 110)
+            btn.draw(screen)
+
+        bar_x = 280
+        bar_w = 860
+        pygame.draw.rect(screen, (40, 44, 64), (bar_x, 30, bar_w, 28), border_radius=5)
+        fill_w = int(bar_w * progress)
         if fill_w > 0:
             bar_color = GREEN if progress >= 1.0 else ACCENT_COLOR
-            pygame.draw.rect(screen, bar_color, (140, 30, fill_w, 28), border_radius=5)
-        pygame.draw.rect(screen, (80, 84, 104), (140, 30, 1000, 28), 2, border_radius=5)
+            pygame.draw.rect(screen, bar_color, (bar_x, 30, fill_w, 28), border_radius=5)
+        pygame.draw.rect(screen, (80, 84, 104), (bar_x, 30, bar_w, 28), 2, border_radius=5)
 
         status = "Simulación completada" if self.done else "Simulando..."
         prog_text = f"{status}  {self.current_index + 1} / {self.total} tweets"
@@ -203,23 +230,25 @@ class SimulationScreen(Screen):
 
         active_state = result.states[self.current_index]
 
+        A = self.controller.hmm.A
+
         for i in range(3):
             self._self_loop(screen, CIRCLES_X[i], CIRCLES_Y,
-                            STATE_COLORS[i], TRANS_PROBS[(i, i)])
+                            STATE_COLORS[i], A[i, i])
 
         self._straight_arrow(screen, POS_X, NEU_X, ARROW_Y_ABOVE,
-                             STATE_COLORS[0], TRANS_PROBS[(0, 1)])
+                             STATE_COLORS[0], A[0, 1])
         self._straight_arrow(screen, POS_X, NEU_X, ARROW_Y_BELOW,
-                             STATE_COLORS[1], TRANS_PROBS[(1, 0)], rev=True)
+                             STATE_COLORS[1], A[1, 0], rev=True)
 
         self._straight_arrow(screen, NEU_X, NEG_X, ARROW_Y_ABOVE,
-                             STATE_COLORS[1], TRANS_PROBS[(1, 2)])
+                             STATE_COLORS[1], A[1, 2])
         self._straight_arrow(screen, NEU_X, NEG_X, ARROW_Y_BELOW,
-                             STATE_COLORS[2], TRANS_PROBS[(2, 1)], rev=True)
+                             STATE_COLORS[2], A[2, 1], rev=True)
 
-        self._curved_arrow(screen, 0, 2, TRANS_PROBS[(0, 2)],
+        self._curved_arrow(screen, 0, 2, A[0, 2],
                            STATE_COLORS[0], above=True)
-        self._curved_arrow(screen, 2, 0, TRANS_PROBS[(2, 0)],
+        self._curved_arrow(screen, 2, 0, A[2, 0],
                            STATE_COLORS[2], above=False)
 
         for i in range(3):
@@ -234,15 +263,18 @@ class SimulationScreen(Screen):
                       cx, CIRCLES_Y + CIRCLE_R + 10, center=True)
 
         obs = result.observations[self.current_index]
-        obs_name = ["palabra positiva", "palabra neutra", "palabra negativa"][obs]
-        word_box_y = CIRCLES_Y + CIRCLE_R + 40
+        obs_label = ["palabra positiva", "palabra neutra", "palabra negativa"][obs]
+        emitted_word = self._extract_word(result.tweets[self.current_index], obs)
         word_color = STATE_COLORS[active_state]
 
+        word_box_y = CIRCLES_Y + CIRCLE_R + 75
+        word_display = f"{obs_label}: «{emitted_word}»" if emitted_word else obs_label
+
         pygame.draw.rect(screen, (30, 36, 60),
-                         (440, word_box_y, 400, 40), border_radius=8)
+                         (400, word_box_y, 480, 40), border_radius=8)
         pygame.draw.rect(screen, word_color,
-                         (440, word_box_y, 400, 40), 2, border_radius=8)
-        draw_text(screen, f'"{obs_name}"', self.font_word, word_color,
+                         (400, word_box_y, 480, 40), 2, border_radius=8)
+        draw_text(screen, word_display, self.font_word, word_color,
                   640, word_box_y + 20, center=True)
 
         tweet_y = word_box_y + 55
@@ -287,6 +319,9 @@ class SimulationScreen(Screen):
             self.scroll -= event.y
             max_scroll = max(0, self.current_index + 1 - VISIBLE_ITEMS)
             self.scroll = max(0, min(self.scroll, max_scroll))
+
+        for btn in self.speed_btns:
+            btn.handle_event(event)
 
         if self.done:
             self.btn_results.handle_event(event)
