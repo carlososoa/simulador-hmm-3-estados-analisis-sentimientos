@@ -27,11 +27,6 @@ class ConvergenceScreen(Screen):
             "Siguiente", self.font_btn,
             ACCENT_COLOR, ACCENT_HOVER, callback=self.go_next
         )
-        self.btn_restart = Button(
-            (820, 640, 160, 50),
-            "Reiniciar", self.font_btn,
-            (180, 60, 60), (220, 80, 80), callback=self.go_restart
-        )
 
         self.chart_surface = None
         self.theoretical = None
@@ -41,9 +36,6 @@ class ConvergenceScreen(Screen):
 
     def go_next(self):
         self.controller.switch_to(7)
-
-    def go_restart(self):
-        self.controller.switch_to(0)
 
     def on_enter(self):
         result = self.controller.simulation_result
@@ -106,9 +98,7 @@ class ConvergenceScreen(Screen):
 
         self.btn_back.draw(screen)
         self.btn_next.draw(screen)
-        self.btn_restart.draw(screen)
 
     def handle_event(self, event):
         self.btn_back.handle_event(event)
         self.btn_next.handle_event(event)
-        self.btn_restart.handle_event(event)

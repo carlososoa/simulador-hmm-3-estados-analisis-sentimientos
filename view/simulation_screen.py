@@ -170,19 +170,21 @@ class SimulationScreen(Screen):
         self.controller.switch_to(3)
 
     def on_enter(self):
-        self.controller.chart_cache = {}
         result = self.controller.simulation_result
         if result and result.n > 0:
-            self.total = result.n
-            self.current_index = -1
-            self.running = True
-            self.done = False
-            self.scroll = 0
+            if self.controller.new_simulation:
+                self.controller.new_simulation = False
+                self.controller.chart_cache = {}
+                self.total = result.n
+                self.current_index = -1
+                self.running = True
+                self.done = False
+                self.scroll = 0
 
-            self.speed_index = 1
-            self.delay = SPEED_OPTIONS[1][1]
+                self.speed_index = 1
+                self.delay = SPEED_OPTIONS[1][1]
 
-            self.last_time = pygame.time.get_ticks()
+                self.last_time = pygame.time.get_ticks()
 
     def update(self):
         if self.running and not self.done:

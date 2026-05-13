@@ -51,6 +51,7 @@ class ConfigScreen(Screen):
             self.selected_tweets, generate_tweet
         )
         self.controller.simulation_result = result
+        self.controller.new_simulation = True
         self.controller.switch_to(2)
 
     def deactivate_all(self):
