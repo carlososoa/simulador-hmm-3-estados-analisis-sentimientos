@@ -29,7 +29,7 @@ class BarChartScreen(Screen):
         self.controller.switch_to(7)
 
     def go_back(self):
-        self.controller.switch_to(5)
+        self.controller.switch_to(6)
 
     def on_enter(self):
         result = self.controller.simulation_result

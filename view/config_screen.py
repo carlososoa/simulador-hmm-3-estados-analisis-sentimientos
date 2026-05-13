@@ -14,13 +14,13 @@ class ConfigScreen(Screen):
         self.font_label = pygame.font.Font(None, 22)
         self.font_warn = pygame.font.Font(None, 20)
 
-        self.tweet_options = [10, 100, 500]
+        self.tweet_options = [10, 100, 500, 1000, 10000]
         self.selected_tweets = 10
 
         self.tweet_buttons = []
         for i, n in enumerate(self.tweet_options):
             btn = Button(
-                (300 + i * 220, 390, 180, 45),
+                (150 + i * 200, 390, 180, 45),
                 f"{n} tweets", self.font_btn,
                 (60, 60, 80), (80, 80, 110),
                 callback=lambda count=n: self.select_tweet_count(count)
@@ -28,7 +28,7 @@ class ConfigScreen(Screen):
             self.tweet_buttons.append(btn)
 
         self.btn_start = Button(
-            (540, 460, 200, 50),
+            (540, 475, 200, 50),
             "Iniciar Simulación", self.font_btn,
             (0, 150, 80), (0, 190, 100),
             callback=self.start_simulation
@@ -114,7 +114,7 @@ class ConfigScreen(Screen):
 
         if self.warning_text:
             draw_text(screen, self.warning_text, self.font_warn,
-                      (255, 200, 100), 640, 440, center=True)
+                      (255, 200, 100), 640, 465, center=True)
 
     def handle_event(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:

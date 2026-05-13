@@ -26,7 +26,7 @@ class ConfusionScreen(Screen):
         self.chart_surface = None
 
     def go_back(self):
-        self.controller.switch_to(6)
+        self.controller.switch_to(7)
 
     def go_restart(self):
         self.controller.switch_to(0)

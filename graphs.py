@@ -124,6 +124,34 @@ def create_sequence_bar_charts(states, observations, state_labels, obs_labels,
     return fig
 
 
+def create_convergence_chart(data, theoretical, labels, colors, title, xlabel, ylabel):
+    colors_norm = [(r / 255, g / 255, b / 255) for r, g, b in colors]
+    fig, ax = plt.subplots(figsize=(8, 5))
+    fig.patch.set_facecolor('#1a2036')
+    ax.set_facecolor('#1a2036')
+
+    x = np.arange(data.shape[1])
+    for i in range(data.shape[0]):
+        ax.plot(x, data[i], label=labels[i] + " (empírica)",
+                color=colors_norm[i], linewidth=1.5, alpha=0.85)
+        ax.axhline(y=theoretical[i], color=colors_norm[i], linestyle='--',
+                   linewidth=2, alpha=0.7,
+                   label=labels[i] + f" (teórica: {theoretical[i]:.3f})")
+
+    ax.set_title(title, fontsize=14, fontweight='bold', pad=15, color='white')
+    ax.set_xlabel(xlabel, fontsize=11, color='white')
+    ax.set_ylabel(ylabel, fontsize=11, color='white')
+    ax.legend(fontsize=9, facecolor='#2a3056', edgecolor='#3a4076', labelcolor='white')
+    ax.grid(True, alpha=0.2, color='gray')
+    ax.tick_params(colors='white', labelsize=9)
+    ax.spines['bottom'].set_color('#3a4076')
+    ax.spines['top'].set_color('#3a4076')
+    ax.spines['left'].set_color('#3a4076')
+    ax.spines['right'].set_color('#3a4076')
+    fig.tight_layout()
+    return fig
+
+
 def create_confusion_matrix(matrix, row_labels, col_labels, title):
     fig, ax = plt.subplots(figsize=(6, 5))
     fig.patch.set_facecolor('#1a2036')

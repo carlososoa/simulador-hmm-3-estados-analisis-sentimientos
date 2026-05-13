@@ -35,6 +35,12 @@ class HMM:
 
         self.pi = np.array([0.2, 0.6, 0.2])
 
+    def stationary_distribution(self):
+        eigvals, eigvecs = np.linalg.eig(self.A.T)
+        idx = np.argmin(np.abs(eigvals - 1.0))
+        pi = np.real(eigvecs[:, idx])
+        return pi / pi.sum()
+
     def set_matrices(self, A, B, pi):
         self.A = np.array(A, dtype=float)
         self.B = np.array(B, dtype=float)
