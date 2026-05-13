@@ -36,6 +36,11 @@ class TrendScreen(Screen):
         if not result or result.n == 0:
             return
 
+        cached = self.controller.chart_cache.get("trend")
+        if cached:
+            self.chart_surface = cached
+            return
+
         obs = np.array(result.states)
 
         fig = create_step_chart(

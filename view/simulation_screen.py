@@ -76,9 +76,101 @@ class SimulationScreen(Screen):
         self.delay = SPEED_OPTIONS[idx][1]
 
     def go_summary(self):
+        import numpy as np
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        from graphs import (
+            create_pie_chart, create_step_chart, create_line_chart,
+            create_sequence_bar_charts, create_confusion_matrix,
+            create_convergence_chart, fig_to_surface
+        )
+        from model.hmm import STATE_NAMES, STATE_COLORS, OBS_NAMES
+
+        result = self.controller.simulation_result
+        hmm = self.controller.hmm
+        cache = {}
+
+        def loading(msg):
+            self.controller.screen.fill(BG_COLOR)
+            draw_text(self.controller.screen, "Generando gráficos...", self.font_progress,
+                      TEXT_COLOR, SCREEN_W // 2, 300, center=True)
+            draw_text(self.controller.screen, msg, self.font_progress,
+                      ACCENT_COLOR, SCREEN_W // 2, 340, center=True)
+            pygame.display.flip()
+            pygame.event.pump()
+
+        loading("Resumen... (1/6)")
+        counts = [0, 0, 0]
+        for s in result.states:
+            counts[s] += 1
+        fig = create_pie_chart(
+            [c / result.n * 100 for c in counts],
+            [f"{STATE_NAMES[i]} ({counts[i]})" for i in range(3)],
+            STATE_COLORS, "Distribución de Sentimientos"
+        )
+        cache["summary"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        loading("Tendencia... (2/6)")
+        fig = create_step_chart(
+            np.array(result.states), STATE_NAMES, STATE_COLORS,
+            "Evolución Temporal del Sentimiento", "Número de Tweet", "Sentimiento"
+        )
+        cache["trend"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        loading("Vector estacionario... (3/6)")
+        fig = create_line_chart(
+            np.array(result.vectors).T, STATE_NAMES, STATE_COLORS,
+            "Evolución del Vector Estacionario", "Iteración (k)", "Probabilidad"
+        )
+        cache["stationary"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        loading("Convergencia empírica... (4/6)")
+        theoretical = hmm.stationary_distribution()
+        n = result.n
+        cum_counts = np.zeros((3, n), dtype=float)
+        for k in range(n):
+            if k == 0:
+                cum_counts[result.states[k], k] = 1.0
+            else:
+                cum_counts[:, k] = cum_counts[:, k - 1]
+                cum_counts[result.states[k], k] += 1.0
+        fig = create_convergence_chart(
+            cum_counts / np.arange(1, n + 1), theoretical,
+            STATE_NAMES, STATE_COLORS,
+            "Convergencia de Probabilidades Empíricas", "Iteración", "Probabilidad"
+        )
+        cache["convergence"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        loading("Secuencia de estados... (5/6)")
+        fig = create_sequence_bar_charts(
+            np.array(result.states), np.array(result.observations),
+            STATE_NAMES, OBS_NAMES, STATE_COLORS, STATE_COLORS,
+            "Secuencia de Estados y Observaciones"
+        )
+        cache["barchart"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        loading("Matriz de confusión... (6/6)")
+        matrix = np.zeros((3, 3), dtype=int)
+        for s, o in zip(result.states, result.observations):
+            matrix[s, o] += 1
+        fig = create_confusion_matrix(
+            matrix, STATE_NAMES, OBS_NAMES,
+            "Matriz de Confusión: Estados vs Observaciones"
+        )
+        cache["confusion"] = fig_to_surface(fig)
+        plt.close(fig)
+
+        self.controller.chart_cache = cache
         self.controller.switch_to(3)
 
     def on_enter(self):
+        self.controller.chart_cache = {}
         result = self.controller.simulation_result
         if result and result.n > 0:
             self.total = result.n

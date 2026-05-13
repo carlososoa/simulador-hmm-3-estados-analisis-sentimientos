@@ -36,6 +36,11 @@ class ConfusionScreen(Screen):
         if not result or result.n == 0:
             return
 
+        cached = self.controller.chart_cache.get("confusion")
+        if cached:
+            self.chart_surface = cached
+            return
+
         matrix = np.zeros((3, 3), dtype=int)
         for s, o in zip(result.states, result.observations):
             matrix[s, o] += 1

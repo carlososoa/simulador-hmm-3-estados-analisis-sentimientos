@@ -14,7 +14,7 @@ class ConfigScreen(Screen):
         self.font_label = pygame.font.Font(None, 22)
         self.font_warn = pygame.font.Font(None, 20)
 
-        self.tweet_options = [10, 100, 500, 1000, 10000]
+        self.tweet_options = [10, 100, 500, 1000, 3500]
         self.selected_tweets = 10
 
         self.tweet_buttons = []

@@ -26,7 +26,7 @@ class BarChartScreen(Screen):
         self.chart_surface = None
 
     def go_next(self):
-        self.controller.switch_to(7)
+        self.controller.switch_to(8)
 
     def go_back(self):
         self.controller.switch_to(6)
@@ -34,6 +34,11 @@ class BarChartScreen(Screen):
     def on_enter(self):
         result = self.controller.simulation_result
         if not result or result.n == 0:
+            return
+
+        cached = self.controller.chart_cache.get("barchart")
+        if cached:
+            self.chart_surface = cached
             return
 
         states = np.array(result.states)

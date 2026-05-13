@@ -53,6 +53,11 @@ class ConvergenceScreen(Screen):
 
         self.theoretical = hmm.stationary_distribution()
 
+        cached = self.controller.chart_cache.get("convergence")
+        if cached:
+            self.chart_surface = cached
+            return
+
         n = result.n
         counts = np.zeros((3, n), dtype=float)
         for k in range(n):

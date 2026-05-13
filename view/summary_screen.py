@@ -44,16 +44,19 @@ class SummaryScreen(Screen):
 
         distribution = [c / result.n * 100 for c in counts]
 
-        fig = create_pie_chart(
-            distribution,
-            [f"{STATE_NAMES[i]} ({counts[i]})" for i in range(3)],
-            STATE_COLORS,
-            "Distribución de Sentimientos"
-        )
-        self.chart_surface = fig_to_surface(fig)
-
-        import matplotlib.pyplot as plt
-        plt.close(fig)
+        cached = self.controller.chart_cache.get("summary")
+        if cached:
+            self.chart_surface = cached
+        else:
+            fig = create_pie_chart(
+                distribution,
+                [f"{STATE_NAMES[i]} ({counts[i]})" for i in range(3)],
+                STATE_COLORS,
+                "Distribución de Sentimientos"
+            )
+            self.chart_surface = fig_to_surface(fig)
+            import matplotlib.pyplot as plt
+            plt.close(fig)
 
         self.counts = counts
         self.distribution_pct = distribution

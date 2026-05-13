@@ -47,20 +47,22 @@ class StationaryScreen(Screen):
             return
 
         vectors = np.array(result.vectors)
-        data = vectors.T
 
-        fig = create_line_chart(
-            data,
-            STATE_NAMES,
-            STATE_COLORS,
-            "Evolución del Vector Estacionario",
-            "Iteración (k)",
-            "Probabilidad"
-        )
-        self.chart_surface = fig_to_surface(fig)
-
-        import matplotlib.pyplot as plt
-        plt.close(fig)
+        cached = self.controller.chart_cache.get("stationary")
+        if cached:
+            self.chart_surface = cached
+        else:
+            fig = create_line_chart(
+                vectors.T,
+                STATE_NAMES,
+                STATE_COLORS,
+                "Evolución del Vector Estacionario",
+                "Iteración (k)",
+                "Probabilidad"
+            )
+            self.chart_surface = fig_to_surface(fig)
+            import matplotlib.pyplot as plt
+            plt.close(fig)
 
         self.final_vector = vectors[-1]
 

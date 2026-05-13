@@ -23,6 +23,7 @@ class GameController:
 
         self.hmm = HMM()
         self.simulation_result = None
+        self.chart_cache = {}
 
         self.screens = [
             TitleScreen(self),
