@@ -87,3 +87,78 @@ def create_step_chart(states, labels, colors, title, xlabel, ylabel):
     ax.spines['right'].set_color('#3a4076')
     fig.tight_layout()
     return fig
+
+
+def create_sequence_bar_charts(states, observations, state_labels, obs_labels,
+                                state_colors, obs_colors, title):
+    state_colors_norm = [(r / 255, g / 255, b / 255) for r, g, b in state_colors]
+    obs_colors_norm = [(r / 255, g / 255, b / 255) for r, g, b in obs_colors]
+    n = len(states)
+
+    fig, ax = plt.subplots(figsize=(11, 4.5))
+    fig.patch.set_facecolor('#1a2036')
+    ax.set_facecolor('#1a2036')
+    ax.tick_params(colors='white', labelsize=9)
+    for spine in ax.spines.values():
+        spine.set_color('#3a4076')
+    ax.set_xlim(-0.5, n - 0.5)
+    ax.margins(x=0.01)
+
+    x = np.arange(n)
+
+    bottom_colors = [state_colors_norm[s] for s in states]
+    top_colors = [obs_colors_norm[o] for o in observations]
+
+    ax.bar(x, np.full(n, 0.5), bottom=np.zeros(n), width=1.0,
+           color=bottom_colors, edgecolor='none', linewidth=0)
+    ax.bar(x, np.full(n, 0.5), bottom=np.full(n, 0.5), width=1.0,
+           color=top_colors, edgecolor='none', linewidth=0)
+
+    ax.set_yticks([0.25, 0.75])
+    ax.set_yticklabels(['Estado', 'Observación'], fontsize=10, color='white')
+    ax.set_ylim(0, 1)
+    ax.set_xlabel('Número de Tweet', fontsize=11, color='white')
+    ax.set_title(title, fontsize=14, fontweight='bold', pad=12, color='white')
+
+    fig.tight_layout()
+    return fig
+
+
+def create_confusion_matrix(matrix, row_labels, col_labels, title):
+    fig, ax = plt.subplots(figsize=(6, 5))
+    fig.patch.set_facecolor('#1a2036')
+    ax.set_facecolor('#1a2036')
+
+    row_sums = matrix.sum(axis=1, keepdims=True)
+    row_sums = np.where(row_sums == 0, 1, row_sums)
+    normed = matrix / row_sums
+
+    cmap = plt.cm.Blues
+    im = ax.imshow(normed, cmap=cmap, aspect='auto', vmin=0, vmax=1)
+
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label('Proporción', color='white', fontsize=10)
+    cbar.ax.yaxis.set_tick_params(color='white', labelcolor='white')
+
+    colors_norm = [(76 / 255, 175 / 255, 80 / 255),
+                   (255 / 255, 193 / 255, 7 / 255),
+                   (244 / 255, 67 / 255, 54 / 255)]
+
+    for i in range(len(row_labels)):
+        for j in range(len(col_labels)):
+            ax.text(j, i, f"{int(matrix[i, j])}\n({normed[i, j]:.1%})",
+                    ha='center', va='center', color='white', fontsize=10, fontweight='bold')
+
+    ax.set_xticks(np.arange(len(col_labels)))
+    ax.set_yticks(np.arange(len(row_labels)))
+    ax.set_xticklabels(col_labels, color='white', fontsize=9)
+    ax.set_yticklabels(row_labels, color='white', fontsize=9)
+
+    for tick, color in zip(ax.get_yticklabels(), colors_norm):
+        tick.set_color(color)
+    for tick, color in zip(ax.get_xticklabels(), colors_norm):
+        tick.set_color(color)
+
+    ax.set_title(title, fontsize=14, fontweight='bold', pad=15, color='white')
+    fig.tight_layout()
+    return fig

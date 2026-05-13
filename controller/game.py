@@ -7,6 +7,8 @@ from view.simulation_screen import SimulationScreen
 from view.summary_screen import SummaryScreen
 from view.trend_screen import TrendScreen
 from view.stationary_screen import StationaryScreen
+from view.bar_chart_screen import BarChartScreen
+from view.confusion_screen import ConfusionScreen
 
 
 class GameController:
@@ -28,6 +30,8 @@ class GameController:
             SummaryScreen(self),
             TrendScreen(self),
             StationaryScreen(self),
+            BarChartScreen(self),
+            ConfusionScreen(self),
         ]
 
     def switch_to(self, index):

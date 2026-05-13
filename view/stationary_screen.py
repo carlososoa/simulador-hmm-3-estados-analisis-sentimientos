@@ -18,8 +18,13 @@ class StationaryScreen(Screen):
             "Anterior", self.font_btn,
             (60, 60, 80), (80, 80, 110), callback=self.go_back
         )
-        self.btn_restart = Button(
+        self.btn_next = Button(
             (1000, 640, 200, 50),
+            "Siguiente", self.font_btn,
+            ACCENT_COLOR, ACCENT_HOVER, callback=self.go_next
+        )
+        self.btn_restart = Button(
+            (820, 640, 160, 50),
             "Reiniciar", self.font_btn,
             (180, 60, 60), (220, 80, 80), callback=self.go_restart
         )
@@ -29,6 +34,9 @@ class StationaryScreen(Screen):
 
     def go_back(self):
         self.controller.switch_to(4)
+
+    def go_next(self):
+        self.controller.switch_to(6)
 
     def go_restart(self):
         self.controller.switch_to(0)
@@ -79,8 +87,10 @@ class StationaryScreen(Screen):
             draw_text(screen, vec_text, self.font_info, GRAY, 640, info_y + 25, center=True)
 
         self.btn_back.draw(screen)
+        self.btn_next.draw(screen)
         self.btn_restart.draw(screen)
 
     def handle_event(self, event):
         self.btn_back.handle_event(event)
+        self.btn_next.handle_event(event)
         self.btn_restart.handle_event(event)
