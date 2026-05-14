@@ -22,7 +22,7 @@ python main.py
 ## Arquitectura (MVC)
 
 - **`model/hmm.py`** — Clase `HMM` con matrices de transición (A), emisión (B) y distribución inicial (π). Método `generate_sequence()` que retorna un `SimulationResult`.
-- **`view/`** — 6 pantallas Pygame (`TitleScreen` → `ConfigScreen` → `SimulationScreen` → `SummaryScreen` → `TrendScreen` → `StationaryScreen`).
+- **`view/`** — 9 pantallas Pygame (`TitleScreen`, `ConfigScreen`, `SimulationScreen`, `SummaryScreen`, `TrendScreen`, `StationaryScreen`, `ConvergenceScreen`, `BarChartScreen`, `ConfusionScreen`).
 - **`controller/game.py`** — `GameController` con el bucle principal, pila de pantallas y la instancia del HMM.
 
 ## Parámetros del modelo
