@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
-análisis/
+análisis/*.md
 Documento.md
 Simulador Markov Sentimientos Redes Sociales.md

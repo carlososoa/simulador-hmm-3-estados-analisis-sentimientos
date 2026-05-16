@@ -1,0 +1,1001 @@
+iteracion,estado,observacion,tweet
+1,Neutral,palabra neutra,El día está tiempo
+2,Neutral,palabra neutra,Todo está muy veo ultimamente
+3,Negativo,palabra negativa,Hoy me siento aburrido
+4,Negativo,palabra negativa,La situación se ve horrible
+5,Negativo,palabra negativa,Siempre pasa algo aburridísimo
+6,Negativo,palabra negativa,Siempre pasa algo aburridísimo
+7,Positivo,palabra positiva,No puedo creer lo emocionante
+8,Positivo,palabra neutra,No puedo creer lo así
+9,Positivo,palabra neutra,Hoy me siento dice
+10,Negativo,palabra negativa,Nunca habia visto algo tan pesimo
+11,Neutral,palabra neutra,Nunca habia visto algo tan entonces
+12,Negativo,palabra negativa,No puedo creer lo triste
+13,Positivo,palabra positiva,Definitivamente es sensacional
+14,Positivo,palabra positiva,El día está extraordinario
+15,Positivo,palabra positiva,Todo está muy brillante ultimamente
+16,Positivo,palabra positiva,Qué momento tan espectacular
+17,Positivo,palabra neutra,Esto es realmente lugar
+18,Positivo,palabra positiva,Hoy me siento fantástico
+19,Negativo,palabra neutra,El día está veces
+20,Negativo,palabra negativa,El día está horrible
+21,Negativo,palabra negativa,Siempre pasa algo aburridísimo
+22,Neutral,palabra positiva,Qué día más fabuloso
+23,Negativo,palabra positiva,Algo hermoso ha pasado hoy
+24,Positivo,palabra negativa,Siempre pasa algo aburrido
+25,Neutral,palabra negativa,Qué aburridísimo es la vida
+26,Neutral,palabra positiva,Qué día más increíble
+27,Neutral,palabra neutra,Definitivamente es tal vez
+28,Neutral,palabra positiva,Qué día más magnífico
+29,Neutral,palabra positiva,Hoy me siento increíble
+30,Negativo,palabra neutra,Qué veo es la vida
+31,Negativo,palabra negativa,Nunca habia visto algo tan insufrible
+32,Negativo,palabra negativa,Qué momento tan aburrido
+33,Neutral,palabra neutra,Hoy me siento veo
+34,Positivo,palabra positiva,El día está magnífico
+35,Neutral,palabra neutra,No puedo creer lo tiempo
+36,Negativo,palabra negativa,Qué día más terrible
+37,Neutral,palabra positiva,Nunca habia visto algo tan sensacional
+38,Neutral,palabra neutra,Me parece nunca lo que vi
+39,Neutral,palabra negativa,Esto es realmente frustrante
+40,Positivo,palabra positiva,Esto es realmente brillante
+41,Positivo,palabra neutra,Algo mañana ha pasado hoy
+42,Positivo,palabra neutra,Todo está muy lugar ultimamente
+43,Positivo,palabra positiva,Definitivamente es fantástico
+44,Positivo,palabra positiva,Hoy me siento magnífico
+45,Positivo,palabra positiva,"La verdad, muy admirable todo"
+46,Neutral,palabra neutra,No puedo creer lo quizás
+47,Neutral,palabra neutra,Siempre pasa algo ahora
+48,Negativo,palabra negativa,Qué momento tan frustrante
+49,Neutral,palabra neutra,El día está parece
+50,Positivo,palabra positiva,Hoy me siento feliz
+51,Positivo,palabra neutra,La situación se ve pienso
+52,Positivo,palabra negativa,El día está aburridísimo
+53,Positivo,palabra positiva,La situación se ve emocionante
+54,Positivo,palabra positiva,Esto es realmente increíble
+55,Neutral,palabra negativa,Algo triste ha pasado hoy
+56,Negativo,palabra negativa,Qué día más asqueroso
+57,Negativo,palabra negativa,Nunca habia visto algo tan aburrido
+58,Negativo,palabra neutra,Esto es realmente día
+59,Negativo,palabra negativa,Definitivamente es lamentable
+60,Negativo,palabra negativa,No puedo creer lo aburrido
+61,Negativo,palabra negativa,La situación se ve peor
+62,Neutral,palabra negativa,"La verdad, muy peor todo"
+63,Negativo,palabra neutra,Me parece solo lo que vi
+64,Negativo,palabra neutra,Esto es realmente momento
+65,Negativo,palabra negativa,Siempre pasa algo aburridísimo
+66,Negativo,palabra negativa,La situación se ve deprimente
+67,Negativo,palabra negativa,"La verdad, muy aburridísimo todo"
+68,Negativo,palabra negativa,Nunca habia visto algo tan deprimente
+69,Negativo,palabra negativa,Definitivamente es detesto
+70,Positivo,palabra positiva,No puedo creer lo espectacular
+71,Positivo,palabra positiva,Me parece extraordinario lo que vi
+72,Neutral,palabra positiva,La situación se ve brillante
+73,Positivo,palabra positiva,Qué espectacular es la vida
+74,Positivo,palabra positiva,No puedo creer lo encantador
+75,Positivo,palabra positiva,Nunca habia visto algo tan perfecto
+76,Positivo,palabra positiva,Siempre pasa algo espectacular
+77,Positivo,palabra neutra,Definitivamente es lugar
+78,Positivo,palabra positiva,Definitivamente es feliz
+79,Positivo,palabra positiva,"La verdad, muy brillante todo"
+80,Positivo,palabra positiva,Esto es realmente feliz
+81,Positivo,palabra positiva,Qué día más genial
+82,Positivo,palabra positiva,No puedo creer lo magnífico
+83,Positivo,palabra positiva,Qué día más genial
+84,Positivo,palabra positiva,Todo está muy brillante ultimamente
+85,Positivo,palabra positiva,Qué hermoso es la vida
+86,Positivo,palabra positiva,Qué momento tan hermoso
+87,Neutral,palabra negativa,Definitivamente es insufrible
+88,Positivo,palabra positiva,Esto es realmente brillante
+89,Positivo,palabra positiva,Hoy me siento estupendo
+90,Positivo,palabra negativa,Hoy me siento detesto
+91,Neutral,palabra positiva,Algo feliz ha pasado hoy
+92,Positivo,palabra negativa,El día está asqueroso
+93,Neutral,palabra neutra,Qué día más así
+94,Negativo,palabra negativa,Nunca habia visto algo tan asqueroso
+95,Negativo,palabra negativa,Esto es realmente frustrante
+96,Neutral,palabra neutra,Hoy me siento nunca
+97,Neutral,palabra neutra,Esto es realmente veo
+98,Neutral,palabra neutra,Definitivamente es después
+99,Positivo,palabra positiva,Algo fantástico ha pasado hoy
+100,Positivo,palabra positiva,Nunca habia visto algo tan fantástico
+101,Positivo,palabra positiva,Siempre pasa algo sensacional
+102,Positivo,palabra neutra,Todo está muy parece ultimamente
+103,Negativo,palabra negativa,Todo está muy pésimo ultimamente
+104,Negativo,palabra negativa,Esto es realmente detesto
+105,Negativo,palabra negativa,Nunca habia visto algo tan asqueroso
+106,Negativo,palabra negativa,El día está pésimo
+107,Negativo,palabra negativa,Algo horrible ha pasado hoy
+108,Negativo,palabra neutra,Definitivamente es tiempo
+109,Neutral,palabra positiva,Me parece extraordinario lo que vi
+110,Neutral,palabra positiva,La situación se ve fantástico
+111,Neutral,palabra positiva,Hoy me siento excelente
+112,Neutral,palabra negativa,El día está deprimente
+113,Neutral,palabra neutra,Esto es realmente pienso
+114,Neutral,palabra positiva,"La verdad, muy fantástico todo"
+115,Neutral,palabra neutra,No puedo creer lo veo
+116,Neutral,palabra neutra,Esto es realmente cosa
+117,Negativo,palabra positiva,Algo sensacional ha pasado hoy
+118,Positivo,palabra positiva,Definitivamente es emocionante
+119,Positivo,palabra positiva,Hoy me siento emocionante
+120,Positivo,palabra positiva,Qué momento tan admirable
+121,Positivo,palabra positiva,"La verdad, muy emocionante todo"
+122,Neutral,palabra negativa,Qué aburridísimo es la vida
+123,Neutral,palabra negativa,La situación se ve pésimo
+124,Negativo,palabra negativa,"La verdad, muy triste todo"
+125,Negativo,palabra negativa,No puedo creer lo terrible
+126,Positivo,palabra positiva,Nunca habia visto algo tan genial
+127,Neutral,palabra neutra,El día está después
+128,Positivo,palabra positiva,El día está emocionante
+129,Positivo,palabra positiva,Nunca habia visto algo tan alegre
+130,Positivo,palabra positiva,El día está fantástico
+131,Positivo,palabra positiva,Esto es realmente mejor
+132,Positivo,palabra positiva,Hoy me siento fantástico
+133,Positivo,palabra neutra,El día está pienso
+134,Positivo,palabra positiva,Qué increíble es la vida
+135,Positivo,palabra negativa,Todo está muy odio ultimamente
+136,Positivo,palabra neutra,Definitivamente es día
+137,Positivo,palabra positiva,Qué momento tan maravilloso
+138,Positivo,palabra positiva,El día está admirable
+139,Neutral,palabra neutra,Definitivamente es mañana
+140,Neutral,palabra neutra,La situación se ve ayer
+141,Positivo,palabra positiva,Qué momento tan excelente
+142,Positivo,palabra negativa,La situación se ve decepcionante
+143,Positivo,palabra neutra,Siempre pasa algo parece
+144,Positivo,palabra neutra,Algo forma ha pasado hoy
+145,Positivo,palabra positiva,Definitivamente es excelente
+146,Neutral,palabra neutra,Algo tiempo ha pasado hoy
+147,Positivo,palabra positiva,Qué momento tan feliz
+148,Positivo,palabra neutra,Nunca habia visto algo tan ayer
+149,Positivo,palabra positiva,Qué magnífico es la vida
+150,Neutral,palabra neutra,Esto es realmente tiempo
+151,Neutral,palabra neutra,Qué día más tal vez
+152,Negativo,palabra negativa,Me parece decepcionante lo que vi
+153,Neutral,palabra positiva,Hoy me siento brillante
+154,Neutral,palabra positiva,El día está excelente
+155,Neutral,palabra negativa,"La verdad, muy decepcionante todo"
+156,Neutral,palabra neutra,Esto es realmente pienso
+157,Negativo,palabra positiva,La situación se ve maravilloso
+158,Negativo,palabra neutra,Siempre pasa algo mañana
+159,Negativo,palabra negativa,Todo está muy peor ultimamente
+160,Neutral,palabra neutra,Qué pienso es la vida
+161,Neutral,palabra neutra,Todo está muy gente ultimamente
+162,Neutral,palabra positiva,El día está extraordinario
+163,Negativo,palabra neutra,"La verdad, muy momento todo"
+164,Negativo,palabra negativa,Algo fatal ha pasado hoy
+165,Negativo,palabra negativa,Todo está muy asqueroso ultimamente
+166,Positivo,palabra positiva,Algo alegre ha pasado hoy
+167,Positivo,palabra negativa,Definitivamente es pesimo
+168,Positivo,palabra positiva,Esto es realmente magnífico
+169,Negativo,palabra negativa,Hoy me siento odio
+170,Negativo,palabra negativa,"La verdad, muy fatal todo"
+171,Negativo,palabra negativa,Algo triste ha pasado hoy
+172,Neutral,palabra neutra,Definitivamente es veo
+173,Neutral,palabra positiva,La situación se ve excelente
+174,Neutral,palabra neutra,Siempre pasa algo veo
+175,Negativo,palabra negativa,Todo está muy molesto ultimamente
+176,Negativo,palabra negativa,"La verdad, muy triste todo"
+177,Negativo,palabra negativa,Algo pésimo ha pasado hoy
+178,Negativo,palabra negativa,"La verdad, muy aburridísimo todo"
+179,Neutral,palabra neutra,El día está tal vez
+180,Positivo,palabra positiva,Qué fantástico es la vida
+181,Neutral,palabra neutra,No puedo creer lo mañana
+182,Negativo,palabra neutra,"La verdad, muy tal vez todo"
+183,Negativo,palabra negativa,"La verdad, muy lamentable todo"
+184,Neutral,palabra positiva,Nunca habia visto algo tan extraordinario
+185,Neutral,palabra neutra,Todo está muy veo ultimamente
+186,Positivo,palabra neutra,Esto es realmente veo
+187,Positivo,palabra negativa,La situación se ve lamentable
+188,Positivo,palabra positiva,Qué día más maravilloso
+189,Positivo,palabra positiva,Qué hermoso es la vida
+190,Positivo,palabra negativa,Todo está muy pesimo ultimamente
+191,Positivo,palabra neutra,Hoy me siento solo
+192,Positivo,palabra positiva,Siempre pasa algo sensacional
+193,Positivo,palabra positiva,Hoy me siento fabuloso
+194,Neutral,palabra neutra,El día está momento
+195,Positivo,palabra positiva,Me parece perfecto lo que vi
+196,Positivo,palabra positiva,Esto es realmente encantador
+197,Positivo,palabra positiva,No puedo creer lo mejor
+198,Neutral,palabra positiva,La situación se ve sensacional
+199,Neutral,palabra neutra,No puedo creer lo quizás
+200,Positivo,palabra neutra,Qué momento tan forma
+201,Positivo,palabra positiva,Hoy me siento increíble
+202,Positivo,palabra positiva,Hoy me siento genial
+203,Neutral,palabra positiva,Siempre pasa algo extraordinario
+204,Neutral,palabra neutra,El día está hoy
+205,Positivo,palabra positiva,La situación se ve genial
+206,Positivo,palabra positiva,Esto es realmente genial
+207,Neutral,palabra negativa,"La verdad, muy triste todo"
+208,Neutral,palabra neutra,Definitivamente es dice
+209,Positivo,palabra positiva,Todo está muy magnífico ultimamente
+210,Neutral,palabra neutra,Qué mañana es la vida
+211,Neutral,palabra positiva,Algo estupendo ha pasado hoy
+212,Neutral,palabra negativa,El día está aburrido
+213,Neutral,palabra negativa,El día está odio
+214,Neutral,palabra positiva,El día está espectacular
+215,Positivo,palabra positiva,Me parece mejor lo que vi
+216,Neutral,palabra neutra,Qué día más día
+217,Positivo,palabra positiva,Esto es realmente emocionante
+218,Positivo,palabra positiva,Esto es realmente alegre
+219,Positivo,palabra neutra,Qué veo es la vida
+220,Positivo,palabra positiva,Definitivamente es fabuloso
+221,Positivo,palabra neutra,"La verdad, muy lugar todo"
+222,Positivo,palabra neutra,Qué día más ayer
+223,Neutral,palabra positiva,No puedo creer lo increíble
+224,Neutral,palabra positiva,Todo está muy estupendo ultimamente
+225,Negativo,palabra positiva,Me parece hermoso lo que vi
+226,Neutral,palabra neutra,Algo pienso ha pasado hoy
+227,Negativo,palabra neutra,Me parece día lo que vi
+228,Negativo,palabra neutra,La situación se ve después
+229,Negativo,palabra negativa,Esto es realmente pesimo
+230,Negativo,palabra neutra,Qué día más algunas
+231,Negativo,palabra positiva,"La verdad, muy genial todo"
+232,Negativo,palabra negativa,Hoy me siento horroroso
+233,Negativo,palabra negativa,Qué día más horrible
+234,Negativo,palabra negativa,Esto es realmente horroroso
+235,Negativo,palabra negativa,Hoy me siento molesto
+236,Negativo,palabra positiva,Definitivamente es genial
+237,Negativo,palabra negativa,La situación se ve asqueroso
+238,Negativo,palabra negativa,Todo está muy terrible ultimamente
+239,Neutral,palabra negativa,Nunca habia visto algo tan lamentable
+240,Positivo,palabra positiva,La situación se ve emocionante
+241,Positivo,palabra positiva,Qué genial es la vida
+242,Positivo,palabra neutra,La situación se ve momento
+243,Positivo,palabra positiva,Qué día más alegre
+244,Positivo,palabra positiva,El día está excelente
+245,Negativo,palabra negativa,Todo está muy aburridísimo ultimamente
+246,Negativo,palabra negativa,Qué momento tan aburridísimo
+247,Negativo,palabra negativa,Qué momento tan aburrido
+248,Neutral,palabra neutra,Qué lugar es la vida
+249,Negativo,palabra negativa,Todo está muy molesto ultimamente
+250,Positivo,palabra negativa,Algo odio ha pasado hoy
+251,Neutral,palabra neutra,Me parece tal vez lo que vi
+252,Neutral,palabra neutra,Qué pienso es la vida
+253,Neutral,palabra positiva,Siempre pasa algo perfecto
+254,Positivo,palabra positiva,No puedo creer lo fabuloso
+255,Positivo,palabra positiva,Qué momento tan emocionante
+256,Positivo,palabra positiva,Qué perfecto es la vida
+257,Positivo,palabra neutra,Qué parece es la vida
+258,Neutral,palabra negativa,Esto es realmente detesto
+259,Negativo,palabra negativa,Qué momento tan frustrante
+260,Neutral,palabra neutra,Todo está muy ahora ultimamente
+261,Neutral,palabra positiva,El día está alegre
+262,Neutral,palabra positiva,Qué alegre es la vida
+263,Positivo,palabra neutra,La situación se ve cosa
+264,Positivo,palabra positiva,La situación se ve maravilloso
+265,Negativo,palabra negativa,Qué día más detesto
+266,Negativo,palabra negativa,El día está horroroso
+267,Positivo,palabra neutra,Qué momento tan lugar
+268,Negativo,palabra negativa,El día está terrible
+269,Negativo,palabra negativa,Siempre pasa algo detesto
+270,Negativo,palabra neutra,Siempre pasa algo solo
+271,Negativo,palabra negativa,Algo decepcionante ha pasado hoy
+272,Neutral,palabra positiva,Todo está muy estupendo ultimamente
+273,Neutral,palabra neutra,Qué lugar es la vida
+274,Negativo,palabra negativa,No puedo creer lo detesto
+275,Negativo,palabra negativa,No puedo creer lo aburridísimo
+276,Negativo,palabra negativa,Hoy me siento aburrido
+277,Positivo,palabra neutra,Todo está muy forma ultimamente
+278,Neutral,palabra positiva,Siempre pasa algo emocionante
+279,Neutral,palabra neutra,Me parece dice lo que vi
+280,Neutral,palabra neutra,"La verdad, muy ayer todo"
+281,Positivo,palabra positiva,Hoy me siento encantador
+282,Neutral,palabra positiva,Todo está muy emocionante ultimamente
+283,Positivo,palabra negativa,Qué frustrante es la vida
+284,Positivo,palabra positiva,Me parece emocionante lo que vi
+285,Positivo,palabra positiva,Todo está muy perfecto ultimamente
+286,Negativo,palabra negativa,Me parece odio lo que vi
+287,Negativo,palabra negativa,El día está molesto
+288,Neutral,palabra negativa,Nunca habia visto algo tan decepcionante
+289,Positivo,palabra neutra,Todo está muy ahora ultimamente
+290,Neutral,palabra neutra,Qué día más así
+291,Positivo,palabra positiva,Qué día más brillante
+292,Neutral,palabra neutra,Qué algunas es la vida
+293,Positivo,palabra positiva,Me parece emocionante lo que vi
+294,Neutral,palabra neutra,Qué momento tan algunas
+295,Neutral,palabra negativa,Algo insufrible ha pasado hoy
+296,Neutral,palabra neutra,"La verdad, muy tal vez todo"
+297,Neutral,palabra positiva,Siempre pasa algo hermoso
+298,Negativo,palabra negativa,"La verdad, muy horroroso todo"
+299,Neutral,palabra neutra,El día está veo
+300,Neutral,palabra negativa,Hoy me siento terrible
+301,Neutral,palabra neutra,"La verdad, muy siempre todo"
+302,Neutral,palabra neutra,Algo veces ha pasado hoy
+303,Positivo,palabra positiva,No puedo creer lo perfecto
+304,Neutral,palabra negativa,La situación se ve horrible
+305,Negativo,palabra negativa,Qué día más decepcionante
+306,Positivo,palabra positiva,Siempre pasa algo estupendo
+307,Neutral,palabra neutra,No puedo creer lo tiempo
+308,Neutral,palabra positiva,Definitivamente es feliz
+309,Neutral,palabra negativa,Siempre pasa algo peor
+310,Neutral,palabra positiva,Siempre pasa algo admirable
+311,Neutral,palabra neutra,El día está cosa
+312,Neutral,palabra neutra,Qué día más tiempo
+313,Neutral,palabra neutra,Qué momento tan después
+314,Neutral,palabra positiva,El día está mejor
+315,Negativo,palabra negativa,Me parece asqueroso lo que vi
+316,Neutral,palabra positiva,Siempre pasa algo extraordinario
+317,Positivo,palabra negativa,Me parece asqueroso lo que vi
+318,Positivo,palabra positiva,Definitivamente es feliz
+319,Positivo,palabra positiva,Todo está muy magnífico ultimamente
+320,Positivo,palabra neutra,Me parece momento lo que vi
+321,Positivo,palabra positiva,Nunca habia visto algo tan extraordinario
+322,Negativo,palabra negativa,Definitivamente es frustrante
+323,Negativo,palabra negativa,Nunca habia visto algo tan detesto
+324,Neutral,palabra neutra,La situación se ve dice
+325,Neutral,palabra negativa,No puedo creer lo decepcionante
+326,Positivo,palabra positiva,Siempre pasa algo sensacional
+327,Positivo,palabra positiva,El día está fabuloso
+328,Positivo,palabra positiva,"La verdad, muy magnífico todo"
+329,Positivo,palabra positiva,El día está admirable
+330,Positivo,palabra negativa,El día está detesto
+331,Positivo,palabra positiva,Definitivamente es maravilloso
+332,Positivo,palabra positiva,No puedo creer lo extraordinario
+333,Positivo,palabra positiva,"La verdad, muy mejor todo"
+334,Negativo,palabra positiva,Esto es realmente emocionante
+335,Neutral,palabra negativa,Esto es realmente insufrible
+336,Neutral,palabra neutra,Qué veo es la vida
+337,Neutral,palabra negativa,"La verdad, muy odio todo"
+338,Negativo,palabra negativa,Qué día más peor
+339,Negativo,palabra neutra,Hoy me siento nunca
+340,Negativo,palabra negativa,Siempre pasa algo detesto
+341,Negativo,palabra negativa,"La verdad, muy horroroso todo"
+342,Negativo,palabra negativa,"La verdad, muy pesimo todo"
+343,Negativo,palabra negativa,Me parece insufrible lo que vi
+344,Negativo,palabra negativa,Me parece fatal lo que vi
+345,Negativo,palabra negativa,Qué momento tan deprimente
+346,Negativo,palabra neutra,Todo está muy veo ultimamente
+347,Negativo,palabra negativa,Todo está muy frustrante ultimamente
+348,Negativo,palabra negativa,Todo está muy molesto ultimamente
+349,Positivo,palabra positiva,Qué momento tan excelente
+350,Neutral,palabra neutra,Hoy me siento quizás
+351,Negativo,palabra negativa,Me parece detesto lo que vi
+352,Negativo,palabra negativa,Esto es realmente triste
+353,Negativo,palabra negativa,Hoy me siento odio
+354,Neutral,palabra neutra,Qué tal vez es la vida
+355,Neutral,palabra neutra,Nunca habia visto algo tan después
+356,Positivo,palabra negativa,Algo detesto ha pasado hoy
+357,Positivo,palabra positiva,Hoy me siento fantástico
+358,Neutral,palabra neutra,Nunca habia visto algo tan veces
+359,Positivo,palabra positiva,Qué día más sensacional
+360,Neutral,palabra positiva,El día está estupendo
+361,Neutral,palabra neutra,Definitivamente es nunca
+362,Neutral,palabra positiva,Algo brillante ha pasado hoy
+363,Positivo,palabra positiva,Todo está muy fabuloso ultimamente
+364,Positivo,palabra positiva,Siempre pasa algo alegre
+365,Neutral,palabra negativa,Siempre pasa algo frustrante
+366,Neutral,palabra neutra,El día está mañana
+367,Negativo,palabra neutra,Qué momento tan así
+368,Negativo,palabra negativa,No puedo creer lo peor
+369,Neutral,palabra neutra,"La verdad, muy así todo"
+370,Neutral,palabra negativa,Qué día más horrible
+371,Neutral,palabra neutra,El día está cosa
+372,Neutral,palabra negativa,Algo odio ha pasado hoy
+373,Neutral,palabra neutra,Qué día más quizás
+374,Negativo,palabra negativa,Esto es realmente lamentable
+375,Negativo,palabra negativa,Hoy me siento detesto
+376,Neutral,palabra neutra,No puedo creer lo ahora
+377,Neutral,palabra negativa,La situación se ve insufrible
+378,Neutral,palabra neutra,Nunca habia visto algo tan ayer
+379,Neutral,palabra negativa,Hoy me siento terrible
+380,Neutral,palabra positiva,Qué fabuloso es la vida
+381,Positivo,palabra positiva,Definitivamente es fabuloso
+382,Positivo,palabra positiva,Algo admirable ha pasado hoy
+383,Positivo,palabra positiva,Me parece increíble lo que vi
+384,Positivo,palabra neutra,Esto es realmente dice
+385,Negativo,palabra negativa,Hoy me siento molesto
+386,Negativo,palabra negativa,No puedo creer lo terrible
+387,Neutral,palabra neutra,Me parece momento lo que vi
+388,Negativo,palabra negativa,Definitivamente es deprimente
+389,Negativo,palabra neutra,Esto es realmente mañana
+390,Neutral,palabra positiva,Esto es realmente fabuloso
+391,Positivo,palabra neutra,Qué momento es la vida
+392,Positivo,palabra positiva,Todo está muy excelente ultimamente
+393,Neutral,palabra neutra,No puedo creer lo mañana
+394,Positivo,palabra neutra,Esto es realmente después
+395,Positivo,palabra positiva,Qué día más sensacional
+396,Neutral,palabra neutra,Siempre pasa algo día
+397,Positivo,palabra positiva,Siempre pasa algo extraordinario
+398,Positivo,palabra positiva,Definitivamente es magnífico
+399,Positivo,palabra positiva,El día está sensacional
+400,Positivo,palabra positiva,Nunca habia visto algo tan encantador
+401,Positivo,palabra positiva,No puedo creer lo brillante
+402,Neutral,palabra negativa,No puedo creer lo fatal
+403,Positivo,palabra positiva,Qué momento tan maravilloso
+404,Negativo,palabra positiva,Todo está muy estupendo ultimamente
+405,Neutral,palabra neutra,Qué gente es la vida
+406,Negativo,palabra neutra,Todo está muy veces ultimamente
+407,Positivo,palabra negativa,Siempre pasa algo decepcionante
+408,Negativo,palabra negativa,Todo está muy frustrante ultimamente
+409,Neutral,palabra neutra,Siempre pasa algo entonces
+410,Positivo,palabra positiva,Algo hermoso ha pasado hoy
+411,Neutral,palabra neutra,Siempre pasa algo quizás
+412,Neutral,palabra positiva,Siempre pasa algo emocionante
+413,Positivo,palabra positiva,Definitivamente es extraordinario
+414,Positivo,palabra positiva,Qué día más increíble
+415,Positivo,palabra neutra,Definitivamente es mañana
+416,Neutral,palabra negativa,Me parece aburrido lo que vi
+417,Neutral,palabra neutra,Qué día más momento
+418,Negativo,palabra negativa,El día está triste
+419,Negativo,palabra negativa,"La verdad, muy peor todo"
+420,Neutral,palabra neutra,El día está tiempo
+421,Neutral,palabra neutra,Nunca habia visto algo tan mañana
+422,Neutral,palabra positiva,Esto es realmente extraordinario
+423,Neutral,palabra neutra,Me parece gente lo que vi
+424,Neutral,palabra neutra,Definitivamente es parece
+425,Positivo,palabra positiva,Siempre pasa algo magnífico
+426,Neutral,palabra neutra,Hoy me siento gente
+427,Positivo,palabra positiva,Qué día más maravilloso
+428,Positivo,palabra positiva,Nunca habia visto algo tan espectacular
+429,Neutral,palabra positiva,La situación se ve feliz
+430,Neutral,palabra neutra,Esto es realmente mañana
+431,Negativo,palabra negativa,Qué momento tan asqueroso
+432,Neutral,palabra neutra,La situación se ve tiempo
+433,Neutral,palabra negativa,La situación se ve horrible
+434,Neutral,palabra negativa,Hoy me siento triste
+435,Negativo,palabra negativa,La situación se ve insufrible
+436,Negativo,palabra negativa,"La verdad, muy decepcionante todo"
+437,Negativo,palabra negativa,Hoy me siento decepcionante
+438,Negativo,palabra negativa,Siempre pasa algo odio
+439,Negativo,palabra neutra,No puedo creer lo gente
+440,Neutral,palabra positiva,Qué momento tan perfecto
+441,Negativo,palabra negativa,Siempre pasa algo horrible
+442,Positivo,palabra positiva,Me parece genial lo que vi
+443,Neutral,palabra negativa,No puedo creer lo lamentable
+444,Neutral,palabra neutra,Esto es realmente hoy
+445,Neutral,palabra positiva,La situación se ve feliz
+446,Negativo,palabra neutra,Algo veo ha pasado hoy
+447,Neutral,palabra positiva,Siempre pasa algo espectacular
+448,Neutral,palabra positiva,Siempre pasa algo brillante
+449,Positivo,palabra positiva,Hoy me siento brillante
+450,Positivo,palabra positiva,Nunca habia visto algo tan brillante
+451,Positivo,palabra positiva,No puedo creer lo estupendo
+452,Positivo,palabra positiva,El día está fabuloso
+453,Positivo,palabra negativa,La situación se ve pesimo
+454,Positivo,palabra neutra,Qué momento tan después
+455,Positivo,palabra neutra,Qué momento tan nunca
+456,Positivo,palabra positiva,Qué día más brillante
+457,Positivo,palabra positiva,Todo está muy alegre ultimamente
+458,Positivo,palabra negativa,"La verdad, muy peor todo"
+459,Positivo,palabra positiva,Definitivamente es genial
+460,Negativo,palabra negativa,Definitivamente es aburridísimo
+461,Negativo,palabra negativa,No puedo creer lo odio
+462,Negativo,palabra positiva,Qué día más magnífico
+463,Neutral,palabra positiva,"La verdad, muy hermoso todo"
+464,Positivo,palabra negativa,La situación se ve aburridísimo
+465,Positivo,palabra positiva,Qué momento tan encantador
+466,Positivo,palabra positiva,Hoy me siento feliz
+467,Neutral,palabra neutra,La situación se ve día
+468,Neutral,palabra positiva,Todo está muy sensacional ultimamente
+469,Neutral,palabra negativa,Nunca habia visto algo tan horrible
+470,Neutral,palabra negativa,La situación se ve fatal
+471,Neutral,palabra neutra,Esto es realmente quizás
+472,Neutral,palabra negativa,Algo lamentable ha pasado hoy
+473,Neutral,palabra negativa,La situación se ve aburrido
+474,Neutral,palabra negativa,Siempre pasa algo insufrible
+475,Neutral,palabra neutra,Qué día más algunas
+476,Neutral,palabra positiva,Me parece excelente lo que vi
+477,Neutral,palabra neutra,Qué momento tan entonces
+478,Neutral,palabra neutra,Qué momento tan veo
+479,Positivo,palabra positiva,Qué espectacular es la vida
+480,Positivo,palabra positiva,"La verdad, muy mejor todo"
+481,Negativo,palabra positiva,Esto es realmente sensacional
+482,Negativo,palabra neutra,Algo momento ha pasado hoy
+483,Negativo,palabra negativa,Siempre pasa algo fatal
+484,Negativo,palabra negativa,Nunca habia visto algo tan odio
+485,Negativo,palabra negativa,Qué molesto es la vida
+486,Neutral,palabra neutra,Me parece después lo que vi
+487,Neutral,palabra neutra,Qué tiempo es la vida
+488,Neutral,palabra neutra,"La verdad, muy solo todo"
+489,Positivo,palabra neutra,Esto es realmente día
+490,Positivo,palabra positiva,Nunca habia visto algo tan emocionante
+491,Positivo,palabra neutra,Nunca habia visto algo tan cosa
+492,Neutral,palabra neutra,Qué día más gente
+493,Positivo,palabra positiva,No puedo creer lo excelente
+494,Positivo,palabra positiva,Qué día más maravilloso
+495,Neutral,palabra neutra,El día está tal vez
+496,Neutral,palabra positiva,Qué momento tan perfecto
+497,Neutral,palabra negativa,La situación se ve insufrible
+498,Positivo,palabra neutra,Siempre pasa algo quizás
+499,Positivo,palabra positiva,Esto es realmente sensacional
+500,Positivo,palabra positiva,Hoy me siento brillante
+501,Negativo,palabra negativa,Qué día más asqueroso
+502,Negativo,palabra negativa,Qué molesto es la vida
+503,Neutral,palabra neutra,Hoy me siento nunca
+504,Neutral,palabra negativa,Nunca habia visto algo tan peor
+505,Neutral,palabra neutra,Esto es realmente pienso
+506,Neutral,palabra negativa,Me parece peor lo que vi
+507,Negativo,palabra negativa,Todo está muy aburridísimo ultimamente
+508,Negativo,palabra negativa,Nunca habia visto algo tan aburrido
+509,Negativo,palabra negativa,No puedo creer lo fatal
+510,Negativo,palabra negativa,Qué día más peor
+511,Positivo,palabra neutra,No puedo creer lo tiempo
+512,Positivo,palabra positiva,Hoy me siento maravilloso
+513,Negativo,palabra neutra,Qué momento tan solo
+514,Neutral,palabra negativa,Qué peor es la vida
+515,Neutral,palabra neutra,Algo hoy ha pasado hoy
+516,Neutral,palabra negativa,Siempre pasa algo aburrido
+517,Negativo,palabra negativa,Algo insufrible ha pasado hoy
+518,Neutral,palabra neutra,Definitivamente es así
+519,Negativo,palabra negativa,Qué detesto es la vida
+520,Neutral,palabra neutra,Algo así ha pasado hoy
+521,Neutral,palabra positiva,No puedo creer lo emocionante
+522,Neutral,palabra neutra,Nunca habia visto algo tan solo
+523,Negativo,palabra negativa,Todo está muy insufrible ultimamente
+524,Positivo,palabra positiva,No puedo creer lo maravilloso
+525,Neutral,palabra negativa,Algo asqueroso ha pasado hoy
+526,Positivo,palabra positiva,El día está excelente
+527,Positivo,palabra negativa,Siempre pasa algo lamentable
+528,Neutral,palabra negativa,Hoy me siento odio
+529,Neutral,palabra positiva,Nunca habia visto algo tan excelente
+530,Neutral,palabra neutra,Definitivamente es pienso
+531,Negativo,palabra negativa,El día está deprimente
+532,Negativo,palabra negativa,Qué día más aburridísimo
+533,Neutral,palabra neutra,El día está veo
+534,Neutral,palabra neutra,"La verdad, muy tiempo todo"
+535,Neutral,palabra neutra,Qué tal vez es la vida
+536,Neutral,palabra negativa,Nunca habia visto algo tan aburrido
+537,Neutral,palabra positiva,Algo extraordinario ha pasado hoy
+538,Negativo,palabra positiva,Me parece hermoso lo que vi
+539,Neutral,palabra positiva,Siempre pasa algo feliz
+540,Neutral,palabra neutra,Nunca habia visto algo tan dice
+541,Neutral,palabra neutra,La situación se ve después
+542,Neutral,palabra neutra,Hoy me siento dice
+543,Neutral,palabra neutra,Hoy me siento algunas
+544,Neutral,palabra positiva,Qué emocionante es la vida
+545,Neutral,palabra neutra,"La verdad, muy tal vez todo"
+546,Neutral,palabra neutra,Definitivamente es nunca
+547,Neutral,palabra neutra,Nunca habia visto algo tan parece
+548,Neutral,palabra neutra,Qué momento es la vida
+549,Neutral,palabra neutra,Todo está muy hoy ultimamente
+550,Positivo,palabra positiva,Qué día más brillante
+551,Neutral,palabra negativa,"La verdad, muy molesto todo"
+552,Neutral,palabra neutra,Definitivamente es entonces
+553,Negativo,palabra positiva,Siempre pasa algo extraordinario
+554,Negativo,palabra negativa,Definitivamente es odio
+555,Negativo,palabra negativa,"La verdad, muy peor todo"
+556,Neutral,palabra neutra,Siempre pasa algo mañana
+557,Positivo,palabra positiva,Me parece emocionante lo que vi
+558,Positivo,palabra positiva,Todo está muy increíble ultimamente
+559,Neutral,palabra neutra,No puedo creer lo quizás
+560,Neutral,palabra neutra,Todo está muy hoy ultimamente
+561,Neutral,palabra negativa,Algo pésimo ha pasado hoy
+562,Positivo,palabra positiva,Me parece alegre lo que vi
+563,Positivo,palabra neutra,Qué ahora es la vida
+564,Positivo,palabra neutra,Todo está muy hoy ultimamente
+565,Positivo,palabra positiva,Esto es realmente admirable
+566,Positivo,palabra positiva,Definitivamente es brillante
+567,Positivo,palabra positiva,Todo está muy sensacional ultimamente
+568,Positivo,palabra positiva,Qué día más excelente
+569,Neutral,palabra positiva,Qué momento tan perfecto
+570,Neutral,palabra positiva,Qué día más maravilloso
+571,Neutral,palabra neutra,Qué día más ahora
+572,Positivo,palabra positiva,No puedo creer lo magnífico
+573,Positivo,palabra positiva,Nunca habia visto algo tan feliz
+574,Positivo,palabra negativa,Esto es realmente pésimo
+575,Negativo,palabra positiva,Todo está muy estupendo ultimamente
+576,Negativo,palabra negativa,Hoy me siento asqueroso
+577,Negativo,palabra neutra,Todo está muy tiempo ultimamente
+578,Negativo,palabra negativa,La situación se ve insufrible
+579,Negativo,palabra negativa,Me parece fatal lo que vi
+580,Negativo,palabra negativa,La situación se ve horroroso
+581,Negativo,palabra positiva,Hoy me siento fabuloso
+582,Negativo,palabra negativa,Definitivamente es triste
+583,Negativo,palabra neutra,Esto es realmente lugar
+584,Neutral,palabra neutra,Qué momento tan ayer
+585,Positivo,palabra positiva,Hoy me siento fabuloso
+586,Neutral,palabra neutra,Todo está muy forma ultimamente
+587,Positivo,palabra neutra,Qué siempre es la vida
+588,Positivo,palabra neutra,No puedo creer lo tiempo
+589,Neutral,palabra positiva,Qué espectacular es la vida
+590,Neutral,palabra neutra,El día está veo
+591,Negativo,palabra negativa,"La verdad, muy pesimo todo"
+592,Neutral,palabra neutra,Algo gente ha pasado hoy
+593,Positivo,palabra negativa,Me parece pesimo lo que vi
+594,Negativo,palabra neutra,El día está hoy
+595,Neutral,palabra neutra,No puedo creer lo lugar
+596,Negativo,palabra negativa,Siempre pasa algo pésimo
+597,Negativo,palabra negativa,No puedo creer lo insufrible
+598,Positivo,palabra positiva,La situación se ve brillante
+599,Neutral,palabra neutra,"La verdad, muy día todo"
+600,Positivo,palabra positiva,La situación se ve fantástico
+601,Negativo,palabra neutra,Algo ahora ha pasado hoy
+602,Negativo,palabra negativa,Nunca habia visto algo tan triste
+603,Negativo,palabra negativa,Qué momento tan molesto
+604,Negativo,palabra negativa,Nunca habia visto algo tan asqueroso
+605,Negativo,palabra neutra,Qué momento tan gente
+606,Negativo,palabra negativa,Qué día más horroroso
+607,Neutral,palabra neutra,Todo está muy mañana ultimamente
+608,Negativo,palabra neutra,Qué nunca es la vida
+609,Negativo,palabra negativa,Todo está muy lamentable ultimamente
+610,Negativo,palabra negativa,Nunca habia visto algo tan pesimo
+611,Negativo,palabra negativa,Me parece horroroso lo que vi
+612,Negativo,palabra negativa,Definitivamente es deprimente
+613,Negativo,palabra negativa,No puedo creer lo detesto
+614,Neutral,palabra neutra,Algo gente ha pasado hoy
+615,Neutral,palabra neutra,Qué momento tan siempre
+616,Positivo,palabra positiva,Siempre pasa algo perfecto
+617,Positivo,palabra positiva,La situación se ve hermoso
+618,Negativo,palabra neutra,Qué día más así
+619,Negativo,palabra negativa,Algo insufrible ha pasado hoy
+620,Neutral,palabra neutra,"La verdad, muy tal vez todo"
+621,Neutral,palabra neutra,Todo está muy gente ultimamente
+622,Neutral,palabra neutra,Definitivamente es parece
+623,Neutral,palabra neutra,Qué momento tan cosa
+624,Neutral,palabra positiva,Definitivamente es increíble
+625,Neutral,palabra positiva,"La verdad, muy magnífico todo"
+626,Neutral,palabra neutra,No puedo creer lo ahora
+627,Neutral,palabra positiva,Algo espectacular ha pasado hoy
+628,Neutral,palabra positiva,Todo está muy fantástico ultimamente
+629,Neutral,palabra neutra,Nunca habia visto algo tan momento
+630,Neutral,palabra neutra,Hoy me siento parece
+631,Neutral,palabra neutra,El día está siempre
+632,Neutral,palabra neutra,Siempre pasa algo después
+633,Neutral,palabra negativa,Hoy me siento frustrante
+634,Positivo,palabra negativa,Me parece aburrido lo que vi
+635,Positivo,palabra positiva,Qué maravilloso es la vida
+636,Negativo,palabra negativa,Qué momento tan frustrante
+637,Negativo,palabra negativa,Esto es realmente pésimo
+638,Negativo,palabra neutra,Qué momento tan parece
+639,Neutral,palabra neutra,Qué día más nunca
+640,Negativo,palabra negativa,Qué momento tan triste
+641,Negativo,palabra negativa,Algo odio ha pasado hoy
+642,Neutral,palabra neutra,Qué día más lugar
+643,Neutral,palabra neutra,La situación se ve momento
+644,Negativo,palabra negativa,Definitivamente es asqueroso
+645,Neutral,palabra negativa,La situación se ve detesto
+646,Positivo,palabra positiva,Definitivamente es fabuloso
+647,Neutral,palabra neutra,Me parece quizás lo que vi
+648,Neutral,palabra positiva,Algo maravilloso ha pasado hoy
+649,Neutral,palabra positiva,Hoy me siento emocionante
+650,Neutral,palabra neutra,"La verdad, muy parece todo"
+651,Neutral,palabra neutra,Definitivamente es veces
+652,Neutral,palabra neutra,Nunca habia visto algo tan siempre
+653,Negativo,palabra neutra,Esto es realmente forma
+654,Negativo,palabra negativa,Qué momento tan deprimente
+655,Negativo,palabra negativa,Nunca habia visto algo tan peor
+656,Negativo,palabra negativa,Definitivamente es peor
+657,Neutral,palabra negativa,Algo insufrible ha pasado hoy
+658,Neutral,palabra negativa,Siempre pasa algo horrible
+659,Neutral,palabra neutra,Esto es realmente hoy
+660,Positivo,palabra positiva,No puedo creer lo brillante
+661,Neutral,palabra neutra,Hoy me siento tiempo
+662,Neutral,palabra neutra,La situación se ve entonces
+663,Neutral,palabra neutra,Qué momento tan mañana
+664,Neutral,palabra neutra,Qué día más forma
+665,Negativo,palabra negativa,Me parece odio lo que vi
+666,Neutral,palabra neutra,Me parece dice lo que vi
+667,Neutral,palabra neutra,Nunca habia visto algo tan tiempo
+668,Positivo,palabra positiva,Todo está muy estupendo ultimamente
+669,Neutral,palabra negativa,Esto es realmente triste
+670,Positivo,palabra positiva,Qué día más extraordinario
+671,Positivo,palabra positiva,Todo está muy excelente ultimamente
+672,Neutral,palabra neutra,Qué momento es la vida
+673,Neutral,palabra neutra,Siempre pasa algo siempre
+674,Neutral,palabra neutra,El día está quizás
+675,Neutral,palabra neutra,Definitivamente es siempre
+676,Negativo,palabra neutra,Definitivamente es así
+677,Positivo,palabra positiva,El día está emocionante
+678,Neutral,palabra neutra,Algo quizás ha pasado hoy
+679,Neutral,palabra neutra,Nunca habia visto algo tan veo
+680,Neutral,palabra neutra,Siempre pasa algo hoy
+681,Neutral,palabra neutra,Algo hoy ha pasado hoy
+682,Neutral,palabra negativa,Siempre pasa algo deprimente
+683,Neutral,palabra negativa,Nunca habia visto algo tan aburridísimo
+684,Neutral,palabra positiva,La situación se ve hermoso
+685,Negativo,palabra neutra,Algo siempre ha pasado hoy
+686,Negativo,palabra negativa,Esto es realmente pésimo
+687,Negativo,palabra negativa,Qué día más fatal
+688,Neutral,palabra neutra,Siempre pasa algo entonces
+689,Positivo,palabra positiva,No puedo creer lo extraordinario
+690,Neutral,palabra neutra,Qué momento tan dice
+691,Neutral,palabra negativa,La situación se ve pesimo
+692,Neutral,palabra neutra,Hoy me siento entonces
+693,Negativo,palabra negativa,No puedo creer lo peor
+694,Neutral,palabra neutra,El día está algunas
+695,Neutral,palabra negativa,Nunca habia visto algo tan deprimente
+696,Negativo,palabra negativa,Algo horroroso ha pasado hoy
+697,Negativo,palabra negativa,Todo está muy fatal ultimamente
+698,Negativo,palabra positiva,Qué día más mejor
+699,Positivo,palabra positiva,La situación se ve extraordinario
+700,Positivo,palabra positiva,Qué día más sensacional
+701,Neutral,palabra neutra,No puedo creer lo hoy
+702,Neutral,palabra neutra,Qué hoy es la vida
+703,Neutral,palabra neutra,Siempre pasa algo hoy
+704,Negativo,palabra negativa,Todo está muy asqueroso ultimamente
+705,Negativo,palabra negativa,Esto es realmente terrible
+706,Negativo,palabra negativa,Nunca habia visto algo tan pesimo
+707,Negativo,palabra positiva,Me parece espectacular lo que vi
+708,Negativo,palabra negativa,Definitivamente es insufrible
+709,Negativo,palabra positiva,Qué genial es la vida
+710,Neutral,palabra neutra,Qué tal vez es la vida
+711,Negativo,palabra negativa,Todo está muy molesto ultimamente
+712,Neutral,palabra negativa,Qué día más insufrible
+713,Neutral,palabra neutra,Me parece nunca lo que vi
+714,Negativo,palabra neutra,Qué momento tan dice
+715,Neutral,palabra neutra,El día está solo
+716,Negativo,palabra negativa,Algo terrible ha pasado hoy
+717,Negativo,palabra negativa,Qué momento tan decepcionante
+718,Neutral,palabra neutra,"La verdad, muy mañana todo"
+719,Neutral,palabra positiva,Me parece mejor lo que vi
+720,Neutral,palabra negativa,El día está odio
+721,Neutral,palabra neutra,El día está veces
+722,Neutral,palabra negativa,El día está decepcionante
+723,Neutral,palabra neutra,Hoy me siento algunas
+724,Neutral,palabra neutra,Siempre pasa algo tiempo
+725,Neutral,palabra neutra,La situación se ve tal vez
+726,Positivo,palabra positiva,No puedo creer lo fantástico
+727,Positivo,palabra negativa,Me parece insufrible lo que vi
+728,Positivo,palabra neutra,Todo está muy tiempo ultimamente
+729,Positivo,palabra positiva,Qué momento tan admirable
+730,Neutral,palabra neutra,Qué día más lugar
+731,Neutral,palabra negativa,Me parece fatal lo que vi
+732,Positivo,palabra positiva,Siempre pasa algo estupendo
+733,Positivo,palabra positiva,Qué genial es la vida
+734,Positivo,palabra positiva,Definitivamente es genial
+735,Neutral,palabra negativa,"La verdad, muy horrible todo"
+736,Neutral,palabra positiva,Algo espectacular ha pasado hoy
+737,Neutral,palabra neutra,"La verdad, muy dice todo"
+738,Negativo,palabra neutra,Todo está muy cosa ultimamente
+739,Neutral,palabra negativa,Esto es realmente lamentable
+740,Negativo,palabra negativa,Esto es realmente fatal
+741,Negativo,palabra negativa,Definitivamente es asqueroso
+742,Neutral,palabra positiva,Esto es realmente estupendo
+743,Negativo,palabra negativa,Todo está muy lamentable ultimamente
+744,Neutral,palabra neutra,La situación se ve nunca
+745,Positivo,palabra positiva,Todo está muy mejor ultimamente
+746,Positivo,palabra neutra,Esto es realmente tiempo
+747,Positivo,palabra positiva,Qué momento tan admirable
+748,Positivo,palabra positiva,El día está alegre
+749,Neutral,palabra neutra,Todo está muy parece ultimamente
+750,Neutral,palabra neutra,Algo veces ha pasado hoy
+751,Negativo,palabra negativa,Esto es realmente detesto
+752,Positivo,palabra positiva,La situación se ve encantador
+753,Neutral,palabra neutra,Algo ayer ha pasado hoy
+754,Neutral,palabra negativa,"La verdad, muy molesto todo"
+755,Neutral,palabra neutra,La situación se ve tiempo
+756,Neutral,palabra positiva,Siempre pasa algo sensacional
+757,Neutral,palabra positiva,Todo está muy sensacional ultimamente
+758,Neutral,palabra neutra,Me parece hoy lo que vi
+759,Negativo,palabra negativa,Qué momento tan asqueroso
+760,Negativo,palabra negativa,Nunca habia visto algo tan pesimo
+761,Neutral,palabra positiva,Esto es realmente feliz
+762,Negativo,palabra negativa,La situación se ve horroroso
+763,Negativo,palabra negativa,Me parece horroroso lo que vi
+764,Negativo,palabra neutra,"La verdad, muy ayer todo"
+765,Neutral,palabra neutra,Qué día más veo
+766,Positivo,palabra positiva,Esto es realmente mejor
+767,Positivo,palabra positiva,El día está fabuloso
+768,Neutral,palabra positiva,Siempre pasa algo sensacional
+769,Negativo,palabra negativa,Qué día más insufrible
+770,Negativo,palabra negativa,Esto es realmente lamentable
+771,Negativo,palabra neutra,Siempre pasa algo después
+772,Neutral,palabra neutra,"La verdad, muy solo todo"
+773,Neutral,palabra positiva,Qué día más hermoso
+774,Neutral,palabra positiva,Me parece genial lo que vi
+775,Neutral,palabra positiva,"La verdad, muy encantador todo"
+776,Neutral,palabra negativa,Siempre pasa algo detesto
+777,Neutral,palabra positiva,Esto es realmente maravilloso
+778,Neutral,palabra neutra,Nunca habia visto algo tan parece
+779,Positivo,palabra positiva,Hoy me siento fantástico
+780,Positivo,palabra positiva,Qué mejor es la vida
+781,Positivo,palabra neutra,Qué pienso es la vida
+782,Positivo,palabra negativa,El día está fatal
+783,Positivo,palabra negativa,Todo está muy fatal ultimamente
+784,Positivo,palabra neutra,Qué momento tan forma
+785,Negativo,palabra negativa,Hoy me siento deprimente
+786,Negativo,palabra neutra,Qué momento tan mañana
+787,Negativo,palabra negativa,Me parece insufrible lo que vi
+788,Negativo,palabra negativa,La situación se ve pesimo
+789,Negativo,palabra neutra,Esto es realmente nunca
+790,Neutral,palabra neutra,Qué entonces es la vida
+791,Negativo,palabra negativa,Todo está muy aburridísimo ultimamente
+792,Negativo,palabra negativa,No puedo creer lo lamentable
+793,Neutral,palabra neutra,"La verdad, muy momento todo"
+794,Negativo,palabra negativa,Qué terrible es la vida
+795,Negativo,palabra negativa,Siempre pasa algo detesto
+796,Neutral,palabra neutra,Hoy me siento gente
+797,Neutral,palabra neutra,No puedo creer lo día
+798,Negativo,palabra negativa,Me parece lamentable lo que vi
+799,Negativo,palabra negativa,Me parece pésimo lo que vi
+800,Positivo,palabra positiva,Nunca habia visto algo tan fantástico
+801,Positivo,palabra positiva,Todo está muy maravilloso ultimamente
+802,Neutral,palabra positiva,Siempre pasa algo estupendo
+803,Neutral,palabra neutra,Siempre pasa algo dice
+804,Neutral,palabra neutra,Qué algunas es la vida
+805,Positivo,palabra positiva,Todo está muy sensacional ultimamente
+806,Negativo,palabra neutra,La situación se ve tal vez
+807,Neutral,palabra neutra,Qué día más gente
+808,Neutral,palabra negativa,"La verdad, muy pesimo todo"
+809,Neutral,palabra neutra,Qué día más mañana
+810,Positivo,palabra positiva,Qué momento tan extraordinario
+811,Negativo,palabra neutra,Hoy me siento veo
+812,Neutral,palabra negativa,Definitivamente es pésimo
+813,Neutral,palabra negativa,No puedo creer lo horroroso
+814,Neutral,palabra neutra,Algo después ha pasado hoy
+815,Neutral,palabra neutra,Qué momento tan quizás
+816,Neutral,palabra positiva,El día está fantástico
+817,Neutral,palabra negativa,Definitivamente es peor
+818,Negativo,palabra neutra,El día está siempre
+819,Neutral,palabra negativa,Definitivamente es horroroso
+820,Negativo,palabra negativa,La situación se ve fatal
+821,Neutral,palabra neutra,La situación se ve hoy
+822,Positivo,palabra positiva,Nunca habia visto algo tan maravilloso
+823,Positivo,palabra positiva,El día está genial
+824,Positivo,palabra positiva,El día está perfecto
+825,Positivo,palabra positiva,El día está excelente
+826,Positivo,palabra positiva,Nunca habia visto algo tan alegre
+827,Positivo,palabra neutra,No puedo creer lo tiempo
+828,Positivo,palabra positiva,"La verdad, muy magnífico todo"
+829,Positivo,palabra positiva,Definitivamente es extraordinario
+830,Positivo,palabra positiva,Qué momento tan encantador
+831,Positivo,palabra negativa,La situación se ve frustrante
+832,Positivo,palabra positiva,El día está alegre
+833,Positivo,palabra positiva,Algo maravilloso ha pasado hoy
+834,Positivo,palabra negativa,Esto es realmente molesto
+835,Negativo,palabra neutra,Todo está muy veces ultimamente
+836,Neutral,palabra neutra,El día está tiempo
+837,Neutral,palabra negativa,Esto es realmente terrible
+838,Neutral,palabra neutra,Me parece así lo que vi
+839,Negativo,palabra negativa,Qué momento tan odio
+840,Negativo,palabra negativa,Me parece horrible lo que vi
+841,Negativo,palabra negativa,Qué horrible es la vida
+842,Neutral,palabra positiva,Qué momento tan emocionante
+843,Neutral,palabra neutra,Algo forma ha pasado hoy
+844,Positivo,palabra positiva,La situación se ve increíble
+845,Positivo,palabra positiva,Qué día más alegre
+846,Positivo,palabra positiva,Qué día más emocionante
+847,Positivo,palabra neutra,Siempre pasa algo hoy
+848,Positivo,palabra positiva,El día está genial
+849,Positivo,palabra neutra,La situación se ve momento
+850,Negativo,palabra negativa,Algo lamentable ha pasado hoy
+851,Neutral,palabra positiva,No puedo creer lo fabuloso
+852,Neutral,palabra positiva,Definitivamente es sensacional
+853,Neutral,palabra neutra,Hoy me siento ayer
+854,Neutral,palabra neutra,"La verdad, muy solo todo"
+855,Negativo,palabra negativa,Me parece pesimo lo que vi
+856,Positivo,palabra positiva,Hoy me siento estupendo
+857,Positivo,palabra positiva,El día está espectacular
+858,Neutral,palabra negativa,La situación se ve triste
+859,Neutral,palabra positiva,Esto es realmente fantástico
+860,Positivo,palabra positiva,Me parece estupendo lo que vi
+861,Positivo,palabra negativa,Qué horroroso es la vida
+862,Neutral,palabra neutra,Definitivamente es día
+863,Neutral,palabra positiva,Siempre pasa algo maravilloso
+864,Positivo,palabra negativa,Hoy me siento frustrante
+865,Positivo,palabra positiva,No puedo creer lo genial
+866,Neutral,palabra negativa,No puedo creer lo fatal
+867,Positivo,palabra positiva,Hoy me siento admirable
+868,Positivo,palabra positiva,Siempre pasa algo brillante
+869,Positivo,palabra positiva,Todo está muy admirable ultimamente
+870,Neutral,palabra positiva,Hoy me siento encantador
+871,Neutral,palabra positiva,Qué día más genial
+872,Negativo,palabra neutra,Qué tal vez es la vida
+873,Negativo,palabra neutra,Nunca habia visto algo tan cosa
+874,Positivo,palabra positiva,El día está encantador
+875,Neutral,palabra neutra,Siempre pasa algo algunas
+876,Neutral,palabra positiva,Esto es realmente mejor
+877,Neutral,palabra neutra,Algo después ha pasado hoy
+878,Neutral,palabra neutra,Esto es realmente veces
+879,Neutral,palabra neutra,Nunca habia visto algo tan mañana
+880,Negativo,palabra neutra,Siempre pasa algo solo
+881,Negativo,palabra negativa,Todo está muy aburridísimo ultimamente
+882,Negativo,palabra neutra,Me parece ayer lo que vi
+883,Negativo,palabra negativa,Definitivamente es horroroso
+884,Neutral,palabra positiva,Esto es realmente excelente
+885,Negativo,palabra negativa,No puedo creer lo pésimo
+886,Neutral,palabra neutra,Qué momento tan tiempo
+887,Positivo,palabra positiva,Me parece magnífico lo que vi
+888,Positivo,palabra positiva,No puedo creer lo encantador
+889,Positivo,palabra positiva,Nunca habia visto algo tan admirable
+890,Neutral,palabra neutra,"La verdad, muy pienso todo"
+891,Neutral,palabra neutra,"La verdad, muy mañana todo"
+892,Neutral,palabra neutra,No puedo creer lo algunas
+893,Neutral,palabra neutra,Qué día más tiempo
+894,Neutral,palabra neutra,Nunca habia visto algo tan algunas
+895,Neutral,palabra negativa,Qué día más aburrido
+896,Neutral,palabra negativa,Siempre pasa algo peor
+897,Neutral,palabra neutra,La situación se ve mañana
+898,Neutral,palabra negativa,Hoy me siento insufrible
+899,Negativo,palabra positiva,Algo fabuloso ha pasado hoy
+900,Negativo,palabra neutra,Qué momento tan quizás
+901,Negativo,palabra neutra,Definitivamente es dice
+902,Negativo,palabra neutra,Algo lugar ha pasado hoy
+903,Neutral,palabra negativa,Definitivamente es frustrante
+904,Neutral,palabra negativa,Nunca habia visto algo tan aburridísimo
+905,Neutral,palabra neutra,Hoy me siento veo
+906,Neutral,palabra neutra,"La verdad, muy siempre todo"
+907,Negativo,palabra negativa,El día está detesto
+908,Negativo,palabra negativa,Qué momento tan horrible
+909,Negativo,palabra neutra,Qué veo es la vida
+910,Negativo,palabra neutra,Hoy me siento nunca
+911,Negativo,palabra negativa,No puedo creer lo insufrible
+912,Neutral,palabra neutra,Algo entonces ha pasado hoy
+913,Neutral,palabra neutra,Hoy me siento hoy
+914,Negativo,palabra negativa,"La verdad, muy deprimente todo"
+915,Negativo,palabra negativa,Algo pésimo ha pasado hoy
+916,Negativo,palabra negativa,Nunca habia visto algo tan frustrante
+917,Negativo,palabra neutra,No puedo creer lo algunas
+918,Negativo,palabra neutra,Qué momento tan siempre
+919,Positivo,palabra negativa,Todo está muy pésimo ultimamente
+920,Neutral,palabra neutra,Qué día más dice
+921,Neutral,palabra negativa,Todo está muy insufrible ultimamente
+922,Positivo,palabra positiva,No puedo creer lo extraordinario
+923,Negativo,palabra negativa,No puedo creer lo peor
+924,Neutral,palabra neutra,Siempre pasa algo parece
+925,Negativo,palabra negativa,Siempre pasa algo insufrible
+926,Negativo,palabra negativa,Nunca habia visto algo tan terrible
+927,Negativo,palabra negativa,La situación se ve molesto
+928,Negativo,palabra negativa,Definitivamente es aburridísimo
+929,Negativo,palabra neutra,Qué cosa es la vida
+930,Neutral,palabra neutra,Siempre pasa algo cosa
+931,Neutral,palabra neutra,"La verdad, muy forma todo"
+932,Neutral,palabra neutra,Definitivamente es gente
+933,Positivo,palabra positiva,El día está increíble
+934,Neutral,palabra neutra,Esto es realmente gente
+935,Positivo,palabra positiva,Qué día más admirable
+936,Positivo,palabra positiva,Esto es realmente brillante
+937,Positivo,palabra positiva,Nunca habia visto algo tan hermoso
+938,Neutral,palabra neutra,Hoy me siento tal vez
+939,Positivo,palabra positiva,Siempre pasa algo brillante
+940,Positivo,palabra positiva,Todo está muy sensacional ultimamente
+941,Neutral,palabra neutra,Todo está muy algunas ultimamente
+942,Neutral,palabra negativa,El día está lamentable
+943,Positivo,palabra positiva,Siempre pasa algo magnífico
+944,Neutral,palabra negativa,Qué momento tan detesto
+945,Neutral,palabra neutra,Hoy me siento veces
+946,Neutral,palabra neutra,El día está hoy
+947,Neutral,palabra neutra,Algo veo ha pasado hoy
+948,Positivo,palabra neutra,Me parece ahora lo que vi
+949,Positivo,palabra positiva,Qué extraordinario es la vida
+950,Neutral,palabra negativa,Esto es realmente horroroso
+951,Negativo,palabra neutra,No puedo creer lo veo
+952,Negativo,palabra negativa,Siempre pasa algo detesto
+953,Neutral,palabra negativa,Hoy me siento deprimente
+954,Negativo,palabra negativa,Qué día más insufrible
+955,Negativo,palabra neutra,No puedo creer lo forma
+956,Negativo,palabra negativa,No puedo creer lo asqueroso
+957,Negativo,palabra negativa,"La verdad, muy frustrante todo"
+958,Negativo,palabra neutra,Qué gente es la vida
+959,Negativo,palabra negativa,Qué horrible es la vida
+960,Neutral,palabra positiva,Hoy me siento feliz
+961,Neutral,palabra neutra,Todo está muy entonces ultimamente
+962,Neutral,palabra neutra,"La verdad, muy siempre todo"
+963,Neutral,palabra negativa,No puedo creer lo aburrido
+964,Neutral,palabra positiva,Qué momento tan encantador
+965,Neutral,palabra neutra,Qué día más entonces
+966,Neutral,palabra neutra,Qué siempre es la vida
+967,Neutral,palabra neutra,Hoy me siento momento
+968,Neutral,palabra positiva,No puedo creer lo fabuloso
+969,Negativo,palabra neutra,Esto es realmente lugar
+970,Neutral,palabra neutra,Qué día más dice
+971,Neutral,palabra neutra,Definitivamente es veo
+972,Neutral,palabra neutra,Qué día más entonces
+973,Neutral,palabra neutra,No puedo creer lo siempre
+974,Neutral,palabra neutra,Nunca habia visto algo tan tal vez
+975,Neutral,palabra neutra,Siempre pasa algo siempre
+976,Neutral,palabra neutra,Me parece forma lo que vi
+977,Positivo,palabra positiva,No puedo creer lo genial
+978,Neutral,palabra neutra,El día está pienso
+979,Negativo,palabra neutra,Todo está muy quizás ultimamente
+980,Negativo,palabra negativa,Todo está muy peor ultimamente
+981,Negativo,palabra negativa,Esto es realmente odio
+982,Negativo,palabra neutra,Qué día más gente
+983,Negativo,palabra negativa,Qué terrible es la vida
+984,Positivo,palabra positiva,Nunca habia visto algo tan brillante
+985,Positivo,palabra neutra,Me parece así lo que vi
+986,Positivo,palabra positiva,No puedo creer lo feliz
+987,Positivo,palabra positiva,Qué momento tan magnífico
+988,Positivo,palabra positiva,Todo está muy hermoso ultimamente
+989,Neutral,palabra neutra,Hoy me siento cosa
+990,Negativo,palabra negativa,Qué día más frustrante
+991,Negativo,palabra positiva,Siempre pasa algo estupendo
+992,Neutral,palabra positiva,Qué día más brillante
+993,Positivo,palabra positiva,El día está increíble
+994,Neutral,palabra neutra,Nunca habia visto algo tan pienso
+995,Negativo,palabra positiva,Todo está muy brillante ultimamente
+996,Negativo,palabra negativa,Qué momento tan odio
+997,Negativo,palabra positiva,Qué día más genial
+998,Neutral,palabra neutra,Qué día más mañana
+999,Negativo,palabra negativa,Nunca habia visto algo tan pesimo
+1000,Neutral,palabra neutra,El día está así

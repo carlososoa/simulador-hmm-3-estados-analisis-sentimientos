@@ -1,0 +1,46 @@
+=== METRICAS DE SIMULACION HMM ===
+Iteraciones: 1000
+
+--- Matriz de Transicion A (teorica) ---
+[[0.6 0.3 0.1]
+ [0.2 0.6 0.2]
+ [0.1 0.3 0.6]]
+
+--- Matriz de Emision B (teorica) ---
+[[0.7 0.2 0.1]
+ [0.2 0.6 0.2]
+ [0.1 0.2 0.7]]
+
+--- Probabilidades Iniciales pi ---
+[0.2 0.6 0.2]
+
+--- Distribucion Estacionaria Teorica ---
+  Positivo: 0.2857
+  Neutral: 0.4286
+  Negativo: 0.2857
+
+--- Conteo de Estados ---
+  Positivo: 298 (29.8%)
+  Neutral: 416 (41.6%)
+  Negativo: 286 (28.6%)
+
+--- Distribucion Empirica ---
+  [0.298 0.416 0.286]
+
+--- Matriz de Transicion Empirica (conteos) ---
+[[189  81  28]
+ [ 84 246  85]
+ [ 25  88 173]]
+
+--- Matriz de Transicion Empirica (normalizada) ---
+[[0.634 0.272 0.094]
+ [0.202 0.593 0.205]
+ [0.087 0.308 0.605]]
+
+--- Transicion mas comun ---
+  Neutral -> Neutral: 246 veces
+
+--- Matriz de Confusion (conteos estado vs observacion) ---
+[[219  49  30]
+ [ 89 244  83]
+ [ 21  61 204]]
