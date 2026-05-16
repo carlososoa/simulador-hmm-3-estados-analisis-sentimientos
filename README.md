@@ -46,3 +46,18 @@ python main.py
 ### Distribución inicial π
 
 Positivo: 0.2 · Neutral: 0.6 · Negativo: 0.2
+
+## Análisis y resultados
+
+La carpeta `análisis/` contiene scripts y resultados de una simulación de 1000 iteraciones del modelo:
+
+- **`simulacion.py`** — Ejecuta la simulación y genera automáticamente todos los gráficos
+- **`heatmap_transicion.py`** — Genera mapa de calor comparativo de la matriz A teórica vs empírica
+- **`simulacion_resultados.csv`** — Secuencia completa de 1000 tuits generados
+- **`metricas.txt`** — Métricas detalladas: matrices empíricas, conteos, distribuciones
+- **`*.png`** — 7 gráficos: distribución, evolución temporal, convergencia, matriz de confusión, etc.
+
+Para reproducir los resultados:
+```bash
+python análisis/simulacion.py
+```
